@@ -1,24 +1,29 @@
-(()=>{
+(() => {
 
-    interface Hero{
-        name:string,
-        age?:number, 
-        power:string[], 
-        getName?:()=>string
+    interface Hero {
+        name: string;
+        age?: number;
+        powers: number[];
+        getName?: () => string;
     }
 
-    let flash: Hero= {
-        name :'Barry Allen',
-        age  : 24,
-        power: ['super velodciad','viajar en el tiempo']
+
+    let flash: Hero  = {
+        name: 'Barry Allen',
+        age: 24,
+        powers: [1,2]
+    } 
+
+    let superman: Hero  = {
+        name: 'Clark Kent',
+        age: 60,
+        powers: [1],
+        getName() {
+            return this.name;
+        }
     }
 
-    let batman: Hero= {
-        name :'Bruno diaz',
-        age  : 36,
-        power: ['super irqueza']
-    }
 
-    
+
 
 })()
